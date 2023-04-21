@@ -13,11 +13,10 @@ const m2 = [
 function sumaMatriciObiecte(matrice1, matrice2) {
   let ms = [];
   for (let i = 0; i < m1.length; i++) {
-      ms.push([]);
-    for (let j = 0; j < m1[i].length; j++) {}
-      ms[i].push(m1[i][j].value + m2[i][j].value);
+    ms.push([]);
+    for (let j = 0; j < m1[i].length; j++) 
+      ms[i].push({ value: m1[i][j].value + m2[i][j].value });
   }
   return ms;
 }
-
 console.log(sumaMatriciObiecte(m1, m2));
